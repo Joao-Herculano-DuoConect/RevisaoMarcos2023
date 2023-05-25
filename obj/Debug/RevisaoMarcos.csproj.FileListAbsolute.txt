@@ -1,0 +1,12 @@
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\bin\Debug\RevisaoMarcos.exe.config
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\bin\Debug\RevisaoMarcos.exe
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\bin\Debug\RevisaoMarcos.pdb
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\obj\Debug\RevisaoMarcos.csproj.AssemblyReference.cache
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\obj\Debug\RevisaoMarcos.csproj.ResolveComReference.cache
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\obj\Debug\RevisaoMarcos.Properties.Resources.resources
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\obj\Debug\RevisaoMarcos.csproj.GenerateResource.cache
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\obj\Debug\RevisaoMarcos.csproj.CoreCompileInputs.cache
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\obj\Debug\RevisaoMarcos.exe
+C:\Users\Marcos.Pereira\Source\Repos\Joao-Herculano-DuoConect\RevisaoMarcos2023\obj\Debug\RevisaoMarcos.pdb

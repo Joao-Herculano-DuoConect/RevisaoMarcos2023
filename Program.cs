@@ -22,8 +22,28 @@ namespace RevisaoMarcos
 
             sboGuiApi = new SboGuiApi();
 
-            sConnection = "0030002C0030002C00530041005000420044005F00440061007400650076002C0050004C006F006D0056004900490056";
+            //sConnection = "0030002C0030002C00530041005000420044005F00440061007400650076002C0050004C006F006D0056004900490056";
 
+            sboGuiApi.Connect(System.Convert.ToString(Environment.GetCommandLineArgs().GetValue(1)));
+            SBOAplication = sboGuiApi.GetApplication();
+
+            SBOAplication.ItemEvent += SBOAplication_ItemEvent;
+            SBOAplication.MenuEvent += SBOAplication_MenuEvent;
+
+            // AdicionarMenus()
+
+            SBOAplication.StatusBar.SetText("Add-on Conectado com sucesso", BoMessageTime.bmt_Short, BoStatusBarMessageType.smt_Success);
+            
+        }
+
+        private static void SBOAplication_MenuEvent(ref MenuEvent pVal, out bool BubbleEvent)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void SBOAplication_ItemEvent(string FormUID, ref ItemEvent pVal, out bool BubbleEvent)
+        {
+            throw new NotImplementedException();
         }
     }
 }
