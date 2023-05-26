@@ -30,20 +30,59 @@ namespace RevisaoMarcos
             SBOAplication.ItemEvent += SBOAplication_ItemEvent;
             SBOAplication.MenuEvent += SBOAplication_MenuEvent;
 
-            // AdicionarMenus()
+            AdicionarMenus();
 
             SBOAplication.StatusBar.SetText("Add-on Conectado com sucesso", BoMessageTime.bmt_Short, BoStatusBarMessageType.smt_Success);
-            
+
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+            System.Windows.Forms.Application.Run();
         }
 
         private static void SBOAplication_MenuEvent(ref MenuEvent pVal, out bool BubbleEvent)
         {
-            throw new NotImplementedException();
+            BubbleEvent = true;
+
+
         }
 
         private static void SBOAplication_ItemEvent(string FormUID, ref ItemEvent pVal, out bool BubbleEvent)
         {
-            throw new NotImplementedException();
+
+            BubbleEvent = true;
+
+
+
+        }
+
+        private static void AdicionarMenus()
+        {
+            Menus menus;
+            MenuItem menuItem;
+
+            MenuItem menuItempai = SBOAplication.Menus.Item("2048"); //id do menu de vendas
+            MenuCreationParams menuCreationParams = SBOAplication.CreateObject(SAPbouiCOM.BoCreatableObjectType.cot_MenuCreationParams); //declarei a variavel
+            menuCreationParams.Type = BoMenuType.mt_POPUP; // recebeu valor da variavel
+            menuCreationParams.UniqueID = "2069"; // id do  formulario
+            menuCreationParams.String = "Faturamento em lote"; // nome do formulario
+            menuCreationParams.Enabled = true; //Habilitei o click
+            menuCreationParams.Position = 3; // posição do formulario
+
+            menus = menuItempai.SubMenus; //menuitem pai é o pai do formulario
+            try
+            {
+                menuItem = menus.AddEx(menuCreationParams); //recebeu o valo do formulario dentro do menuItem item
+
+
+            }
+            catch 
+            {
+                menuItem = SBOAplication.Menus.Item("2048");
+
+                
+            }
+
+    
         }
     }
 }
