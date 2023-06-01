@@ -42,6 +42,18 @@ namespace RevisaoMarcos
         private static void SBOAplication_MenuEvent(ref MenuEvent pVal, out bool BubbleEvent)
         {
             BubbleEvent = true;
+            if (pVal.BeforeAction)
+
+
+
+            {
+                if (pVal.MenuUID == "mnFil")
+                {
+                    FiltrarParceiro filtrarParceiro = new FiltrarParceiro();
+                    filtrarParceiro.Abrirform(SBOAplication);
+                }
+            }
+           
 
 
         }
@@ -50,13 +62,16 @@ namespace RevisaoMarcos
         {
 
             BubbleEvent = true;
+            if (FormUID == "")
+            {
 
+            }
 
 
         }
 
         private static void AdicionarMenus()
-        {
+        {//função de abrir Menu
             Menus menus;
             MenuItem menuItem;
 
@@ -81,8 +96,29 @@ namespace RevisaoMarcos
 
                 
             }
+            // Icone do Menu
+            menuItempai = SBOAplication.Menus.Item("2048");
+            menuCreationParams = SBOAplication.CreateObject(BoCreatableObjectType.cot_MenuCreationParams);
+            menuCreationParams.Type = BoMenuType.mt_STRING;
+            menuCreationParams.UniqueID = "mnFil";
+            menuCreationParams.String = "Faturamento em lote";
+            menuCreationParams.Enabled = true;
+            menuCreationParams.Position = 3;
 
-    
+            menus = menuItempai.SubMenus;
+            try
+            {
+                menuItem = menus.AddEx(menuCreationParams); //recebeu o valo do formulario dentro do menuItem item
+
+
+            }
+            catch
+            {
+                menuItem = SBOAplication.Menus.Item("mnFil");
+
+
+            }
+
         }
     }
 }
